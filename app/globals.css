@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b1220;
+}
+
+/* Typography tweaks */
+.prose :where(p):not(:where([class~="not-prose"] *)) {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Smooth focus */
+:focus-visible {
+  outline: none;
+}
